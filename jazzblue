@@ -1,0 +1,9 @@
+git checkout -b tarea-marketplace-artesanal
+git add nombre_archivo_modificado
+git commit -m "Añadir funcionalidad de registro de artesanos"
+git checkout -b fix-problema-en-carrito
+git checkout tarea-marketplace-artesanal
+git merge fix-problema-en-carrito
+git checkout main
+git merge tarea-marketplace-artesanal
+git push origin main
